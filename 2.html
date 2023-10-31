@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+</head>
+
+<body>
+    <script>
+        function printPattern(rows, cols) {
+            for (let i = 1; i <= rows; i++) {
+                let pattern = '';
+                for (let j = 1; j <= cols; j++) {
+                    if (i === 1 || i === rows || j === 1 || j === cols) {
+                        pattern += '* ';
+                    } else {
+                        pattern += '  ';
+                    }
+                }
+                console.log(pattern);
+            }
+        }
+
+        const numRows = 7; 
+        const numCols = 5; 
+
+        printPattern(numRows, numCols);
+
+
+
+
+
+
+        // let rows = 5;
+
+        // // pattern variable carries the final pattern in string format
+        // let pattern = "";
+
+        // // outer loop runs for `rows` no. of times
+        // for (let n = 1; n <= rows; n++) {
+        //     for (let num = 1; num <= 5; num++) {
+        //         // print star only if it is the boundary location
+        //         if (n == 1 || n == rows) pattern += "*";
+        //         else {
+        //             if (num == 1 || num == 5) {
+        //                 pattern += "*";
+        //             } else {
+        //                 pattern += " ";
+        //             }
+        //         }
+        //     }
+        //     pattern += "\n";
+        // }
+        // console.log(pattern);
+    </script>
+</body>
+
+</html>
